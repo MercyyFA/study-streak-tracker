@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Streak Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1>Study Streak Tracker</h1>
+    <p class="subtitle">Build consistency, one day at a time!</p>
+
+    <!-- The Streak Counter Display -->
+    <div class="streak-box">
+      <span id="streak-count">0</span>
+      <span class="label">Days Streak 🔥</span>
+    </div>
+
+    <!-- Interactive Buttons -->
+    <button id="study-btn">I Studied Today! 🎉</button>
+    <button id="reset-btn">Reset Streak</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

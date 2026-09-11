@@ -3,24 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Study Streak Tracker</title>
+  <title>Multi-Subject Study Tracker</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="card">
     <h1>Study Streak Tracker</h1>
-    <p class="subtitle">Build consistency, one day at a time!</p>
+    <p class="subtitle">Track consistency across all your subjects!</p>
 
-    <!-- The Streak Counter Display -->
-    <div class="streak-box">
-      <span id="streak-count">0</span>
-      <span class="label">Days Streak 🔥</span>
+    <!-- Add New Subject Form -->
+    <div class="input-group">
+      <input type="text" id="subject-input" placeholder="Enter subject (e.g. Math)...">
+      <button id="add-btn">Add Subject</button>
     </div>
 
-    <!-- Interactive Buttons -->
-    <button id="study-btn">I Studied Today! 🎉</button>
-    <button id="reset-btn">Reset Streak</button>
+    <!-- Container where subject cards will appear -->
+    <div id="subject-list"></div>
   </div>
 
   <script src="script.js"></script>

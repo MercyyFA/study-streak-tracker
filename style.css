@@ -16,7 +16,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   width: 100%;
-  max-width: 420px;
+  max-width: 440px;
   text-align: center;
 }
 
@@ -61,27 +61,27 @@ input:focus {
   cursor: pointer;
 }
 
-/* Individual Subject Cards */
+/* Individual Subject Card */
 .subject-card {
   background-color: #f8fafc;
   border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  padding: 1rem;
-  margin-bottom: 0.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  border-radius: 14px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
-.subject-info {
-  text-align: left;
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
 }
 
 .subject-name {
   font-weight: 700;
   color: #1e293b;
-  font-size: 1.05rem;
-  display: block;
+  font-size: 1.1rem;
 }
 
 .subject-streak {
@@ -94,13 +94,27 @@ input:focus {
   color: #4f46e5;
 }
 
+/* Timer Section inside Card */
+.timer-display {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: monospace;
+  color: #0f172a;
+  background-color: #e2e8f0;
+  padding: 0.4rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
 .action-btns {
   display: flex;
   gap: 6px;
 }
 
 .action-btns button {
-  padding: 0.5rem 0.8rem;
+  flex: 1;
+  padding: 0.5rem;
   border: none;
   border-radius: 8px;
   font-weight: 600;
@@ -108,16 +122,28 @@ input:focus {
   cursor: pointer;
 }
 
-.study-btn {
+.start-btn {
   background-color: #10b981;
   color: white;
 }
 
-.delete-btn {
-  background-color: #ef4444;
+.stop-btn {
+  background-color: #f59e0b;
   color: white;
 }
 
+.streak-btn {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.delete-btn {
+  flex: 0 0 auto !important;
+  background-color: transparent;
+  color: #ef4444;
+  font-size: 1.1rem;
+  padding: 0 0.4rem;
+}
 #reset-btn:hover {
   color: #ef4444;
 }
